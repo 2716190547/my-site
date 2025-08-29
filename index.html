@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="color-scheme: dark;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>曾施程 - Product Designer</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="shortcut icon" href="./assets/public/favicon.svg"/>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+</head>
+<body>
+    <canvas class="fireworks"></canvas>
+    <div class="head">
+        <div class="main">
+            <a href="./index.html" class="logo"><img src="./assets/public/logo_text.svg"></a>
+            <div class="menu">
+                <li class="magical btn nav" onclick="window.location.href='./index.html'">首页</li>
+                <li class="magical btn" onclick="window.location.href='./work.html'">作品</li>
+                <!-- <li class="magical btn" onclick="window.location.href='./blog.html'">Blog</li> -->
+                <li class="magical btn" onclick="window.location.href='./about.html'">关于我</li>
+            </div>
+            <div class="menu" id="menu-expand">
+                <li class="magical btn skin" id="menu-expand-child"><i class="icon menu-icon"></i></li>
+            </div>
+            <div id="menu-panel">
+                <div class="menu-panel-content">
+                    <li class="magical btn nav" onclick="window.location.href='./index.html'">Home</li>
+                    <li class="magical btn" onclick="window.location.href='./work.html'">Work</li>
+                    <li class="magical btn" onclick="window.location.href='./blog.html'">Blog</li>
+                    <li class="magical btn" onclick="window.location.href='./about.html'">About</li>
+                </div>
+            </div>
+        </div>
+        <blockquote><img src="./assets/public/logo.svg"></blockquote>
+    </div>
+    <div class="index">
+        <div class="hello">
+            <div class="title">
+                <div class="title-hi">你好，我是</div>
+                <a class="title-name" href="https://worthy-thing-104972.framer.app/">曾施程</a>
+            </div>
+            <div class="hello-desc" id="typed"></div>
+        </div>
+        <div class="content-divider"></div>
+        <div class="quickly-link">
+            <div class="title-hi">What did I do</div>
+            <div class="loader"></div>
+            <div class="link-card">
+                <div class="link-card-list">
+                    <div class="magical link-card-item">
+                        <a>
+                            <img src="./assets/index/App.svg" alt="">
+                            <div class="info">
+                                <div class="info-title">移动端</div>
+                                <div class="info-desc">移动端 app 及网页适配设计</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="magical link-card-item">
+                        <a>
+                            <img src="./assets/index/B web.svg" alt="">
+                            <div class="info">
+                                <div class="info-title">B 端网页</div>
+                                <div class="info-desc">熟悉 B 端设计业务与工作流程</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="magical link-card-item">
+                        <a>
+                            <img src="./assets/index/Motion.svg" alt="">
+                            <div class="info">
+                                <div class="info-title">动效</div>
+                                <div class="info-desc">丝滑流畅的动效设计</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="magical link-card-item">
+                        <a>
+                            <img src="./assets/index/Brand.svg" alt="">
+                            <div class="info">
+                                <div class="info-title">品牌网站</div>
+                                <div class="info-desc">有特色的品牌网站设计</div>
+                            </div>
+                        </a>
+                    </div>                    
+                    <div class="magical link-card-item">
+                        <a>
+                            <img src="./assets/index/Component.svg" alt="">
+                            <div class="info">
+                                <div class="info-title">设计系统</div>
+                                <div class="info-desc">完整的设计组件库搭建</div>
+                            </div>
+                        </a>
+                    </div>                    
+                    <div class="magical link-card-item">
+                        <a>
+                            <img src="./assets/index/Interaction.svg" alt="">
+                            <div class="info">
+                                <div class="info-title">交互</div>
+                                <div class="info-desc">细腻舒适的交互体验</div>
+                            </div>
+                        </a>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="copyright">
+            <div>© 2023 Design by <a href="https://asorn.cn/" target="_blank">Asorn</a></div>
+            <span>|</span>
+            <div class="fillings">
+                <a href="https://asorn.cn/" target="_blank">Asorn</a>
+            </div>
+            <span>|</span>
+            <div class="friends">
+                <a href="https://zdo.fun/" target="_blank">ZDO</a>
+            </div>
+        </div>
+    </div>
+    <div class="widget">
+        <div class="shape-light"></div>
+        <div class="shape-star">
+            <div class="rising-stars rising-stars-visible">
+                <div style="height:1px;width:1px"></div>
+                <div style="height:2px;width:2px"></div>
+                <div style="height:1px;width:1px"></div>
+            </div>
+        </div>
+        <div class="shape-earth"></div>
+    </div>
+</body>
+<script>
+    // 打字效果，感谢 typed.js: https://mattboldt.github.io/typed.js/docs/
+    const options = {
+        strings: [
+            ">_ 欢迎来到我的主页_ ^1000",
+            ">_ 现在让我们开始探索吧!_ ^1000",
+        ],
+        typeSpeed: 50, // 打印速度
+        backSpeed: 20, // 回退速度
+        startDelay: 100, // 开始之前的延迟300毫秒
+        loop: true, // 是否循环
+        showCursor: false, // 不显示光标
+    };
+    const typed = new Typed('#typed', options);
+</script>
+<script src="./js/main.min.js"></script>
+<script src='./js/anime.js'></script>
+<script src='./js/firework.js'></script>
+</html>
