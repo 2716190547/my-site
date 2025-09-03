@@ -1436,3 +1436,30 @@ body {
   visibility: visible;
   opacity: 1;
 }
+
+.image-list-container {
+  width: 100%;
+  /* 容器宽度撑满父元素 */
+  display: flex;
+  /* 使用 Flexbox 布局 */
+  flex-direction: column;
+  /* 垂直排列子元素 */
+  align-items: center;
+  /* 水平居中对齐 */
+}
+
+.image-item {
+  width: 100%;
+  /* 图片宽度 80%  */
+  border-radius: 8px;
+  /* 圆角 8px */
+  margin-bottom: 32px;
+  /* 底部间距 32px */
+  object-fit: contain;
+  /* 保持图片比例并适应容器 */
+}
+
+/* 移除最后一项的margin-bottom, 避免页面底部的额外间距 */
+.image-item:last-child {
+  margin-bottom: 0;
+}
